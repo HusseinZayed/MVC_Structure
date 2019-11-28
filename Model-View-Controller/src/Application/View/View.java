@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Application.View;
 
-/**
- *
- * @author hussein
- */
-public class View {
+import Application.Model.Model;
+import javax.swing.JFrame;
+
+ //second step
+public class View extends JFrame {
     
+    //insert all forms here and desgin
+    //and desgin interfce to model
+    
+    private Model model;
+
+	public View(Model model) {
+            
+		super("MVC Demo");
+		this.model = model;
+	}
 }

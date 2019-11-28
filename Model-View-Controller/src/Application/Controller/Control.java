@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Application.Controller;
 
-/**
- *
- * @author hussein
- */
+import Application.Model.Model;
+import Application.View.View;
+
+//third step
 public class Control {
     
+    //The Controller exists between the view and the model.
+    //It listens to events triggered by the view 
+    
+        private View view;
+	private Model model;
+	
+	public Control(View view, Model model) {
+		this.view = view;
+		this.model = model;
+	}
 }
